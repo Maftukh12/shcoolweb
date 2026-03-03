@@ -5,7 +5,7 @@ Website sekolah lengkap dengan React.js (frontend), Node.js (backend), dan MySQL
 ## Struktur Project
 
 ```
-d:\pro\
+
 ├── database/
 │   ├── schema.sql         # DDL schema database
 │   └── seed.sql           # Data awal (admin, guru, siswa)
@@ -29,8 +29,8 @@ d:\pro\
 ## Setup Database MySQL
 
 1. Buka MySQL Workbench atau terminal MySQL
-2. Jalankan file schema: `source d:\pro\database\schema.sql`
-3. Jalankan seed data: `source d:\pro\database\seed.sql`
+2. Jalankan file schema: `source \database\schema.sql`
+3. Jalankan seed data: `source \database\seed.sql`
 
 Atau via CLI:
 ```bash
@@ -53,14 +53,14 @@ JWT_SECRET=sekolah_secret_jwt_2025_very_secure_key
 
 ### Backend (Terminal 1)
 ```bash
-cd d:\pro
+
 node server.js
 # Server berjalan di http://localhost:5000
 ```
 
 ### Frontend (Terminal 2)
 ```bash
-cd d:\pro\frontend
+cd \frontend
 npm run dev
 # Buka http://localhost:5173
 ```
@@ -76,7 +76,7 @@ npm run dev
 > **Catatan:** Password di seed.sql sudah di-hash dengan bcrypt.
 > Jika login gagal, generate ulang hash dengan:
 > ```bash
-> cd d:\pro && node -e "const b=require('bcryptjs'); b.hash('Admin@123',10).then(h=>console.log(h))"
+> node -e "const b=require('bcryptjs'); b.hash('Admin@123',10).then(h=>console.log(h))"
 > ```
 > Lalu update tabel users dengan hash baru.
 
