@@ -34,8 +34,8 @@ Website sekolah lengkap dengan React.js (frontend), Node.js (backend), dan MySQL
 
 Atau via CLI:
 ```bash
-mysql -u root -p < d:\pro\database\schema.sql
-mysql -u root -p < d:\pro\database\seed.sql
+mysql -u root -p < \database\schema.sql
+mysql -u root -p < \database\seed.sql
 ```
 
 ## Konfigurasi `.env`
