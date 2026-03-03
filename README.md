@@ -40,7 +40,7 @@ mysql -u root -p < \database\seed.sql
 
 ## Konfigurasi `.env`
 
-Edit `d:\pro\.env` sesuai kredensial MySQL Anda:
+Edit `.env` sesuai kredensial MySQL Anda:
 ```env
 DB_HOST=localhost
 DB_USER=root
